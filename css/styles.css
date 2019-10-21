@@ -12,3 +12,7 @@ nav ul a:hover {
     color: white;
     text-transform: unset;
 }
+
+.row .pushpin li a {
+    font-size: 1.3rem;
+}
