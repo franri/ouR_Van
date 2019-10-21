@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-
+    
 </head>
 
 <body>
@@ -43,23 +43,16 @@
         <div class="container">
             <div class="row">
                 <div class="section">
-                    <div class="col s12">
+                    <div class="col s6">
                         <ul id="tabs-swipe-demo" class="tabs">
-                            <li class="tab col s3"><a href="#test1">Test 1</a></li>
-                            <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-                            <li class="tab col s3"><a href="#test3">Test 3</a></li>
+                            <li class="tab col s3"><a class="active" href="#feed">Feed</a></li>
+                            <li class="tab col s3"><a href="#full-story">Full Story</a></li>
+                           
                         </ul>
                     </div>
                 </div>
-                <div id="test1" class="col s12">
-                    <div class="teal lighten-2">Test 1</div>
-                </div>
-                <div id="test2" class="col s12">
-                    <div class="red accent-3">Test 2</div>
-                </div>
-                <div id="test3" class="col s12">
-                    <div class="lime accent-2">Test 3</div>
-                </div>
+                <div id="feed" class="col s12 teal lighten-2">Aca esta el Feed. El feed va a ir en toda este div</div>
+                <div id="full-story" class="col s12 red accent-3">Aca va ael Full Story. El Full Story va a estar en todo este div</div>
             </div>
         </div>
     </main>
@@ -100,11 +93,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            M.AutoInit();
-        });
-    </script>
+    <script src="../js/feed.js"></script>
+    
 </body>
 
 </html>
