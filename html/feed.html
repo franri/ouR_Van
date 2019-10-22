@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    
+
 </head>
 
 <body>
@@ -47,12 +47,35 @@
                         <ul class="tabs cinchar-derecha">
                             <li class="tab"><a class="active" href="#feed">Feed</a></li>
                             <li class="tab"><a href="#full-story">Full Story</a></li>
-                           
+
                         </ul>
                     </div>
                 </div>
-                <div id="feed" class="col s12 teal lighten-2">Aca esta el Feed. El feed va a ir en toda este div</div>
-                <div id="full-story" class="col s12 red accent-3">Aca va ael Full Story. El Full Story va a estar en todo este div</div>
+                <div class="tabs-content carousel carousel-slider z-depth-3" style="height: 400px;">
+                    <div id="feed" class="col s12 teal lighten-2 active carousel-item"
+                        style="z-index: 0; opacity: 1; visibility: visible; transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px);">
+                    
+                    
+                    
+                    
+                        Aca esta el Feed. El feed va a ir en toda este div
+                    
+                    
+                    
+                    
+                    </div>
+                    <div id="full-story" class="col s12 red accent-3 carousel-item"
+                        style="transform: translateX(0px) translateX(810px) translateZ(0px); z-index: -1; opacity: 1; visibility: visible;">
+                    
+                    
+                        Aca va ael Full Story. El Full Story va a estar en todo este div
+                    
+                    
+                    
+                    
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
@@ -94,7 +117,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/feed.js"></script>
-    
+
 </body>
 
 </html>
