@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    var elems = document.querySelectorAll('.tabs');
-    var options = {swipeable: true};
-    var instance = M.Tabs.init(elems[1], options);
+    var elemsTabs = document.querySelectorAll('.tabs');
+    var optionsSwipeable = {swipeable: true};
+    var instanceSwipTabs = M.Tabs.init(elemsTabs[1], optionsSwipeable);
 
+    var elemsCar = document.querySelectorAll('.carousel');
+    var optionsCar = {duration: 200}; 
+    var instancesCar = M.Carousel.init(elemsCar[2], optionsCar);
+    console.log(elemsCar);
 
 });
