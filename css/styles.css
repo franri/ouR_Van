@@ -1,19 +1,24 @@
-
 /* Start - Navbar chico y grande parecidos */
 nav ul a:hover {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .tabs.tabs-transparent .tab a {
     color: white;
     text-transform: unset;
 }
+
 /* End - Navbar chico y grande parecidos */
 
 /* Start - Scrollspy más grande */
 .row .pushpin li a {
     font-size: 1.1rem;
 }
+
+.table-of-contents {
+    padding-top: 8rem;
+}
+
 /* End - Scrollspy más grande */
 
 /* Start - Tabs Feed | Full Story alineadas a la derecha */
@@ -28,13 +33,15 @@ nav ul a:hover {
         flex-grow: 0;
     }
 }
+
 /* End - Tabs Feed | Full Story alineadas a la derecha */
 
 /* Start - Layout y Styling de Home Cards */
 .card .card-image .card-title {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 100%;
 }
+
 .card .card-content {
     padding: 0 24px 0 24px;
 }
@@ -43,6 +50,7 @@ nav ul a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+
 .card-container .card {
     flex-grow: 0;
     flex-shrink: 0;
@@ -50,7 +58,7 @@ nav ul a:hover {
 
 /* En pantallas grandes, 3 por fila */
 @media (min-width: 993px) {
-    
+
     .card-container .card {
         flex-basis: 30%;
         margin: 1%;
@@ -64,15 +72,69 @@ nav ul a:hover {
         margin: 1%;
     }
 }
+
 /* En pantallas chicas, 1 por fila */
 @media (max-width: 601px) {
     .card-container {
         justify-content: center;
     }
+
     .card-container .card {
         flex-basis: 75%;
     }
 }
 
-
 /* End - Layout y Styling de Home Cards */
+
+/* Start - Parallax Chapita */
+.parallax-container .bandera {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+@media (min-width: 993px) {
+    .parallax-container {
+        height: 100vh;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .parallax-container {
+        height: 100vh;
+    }
+}
+
+/* End - Parallax Chapita */
+
+/* Para que las listas estén espaciadas */
+ul li:not(:first-child) {
+    margin-top: 5px;
+}
+
+/* Specs de Chapita */
+.specs {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 602px) {
+    .specs {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 601px) {
+    .specs {
+        flex-wrap: wrap;
+    }
+}
+
+.specs.impar {
+    flex-direction: row;
+}
+
+.specs.par {
+    flex-direction: row-reverse;
+}
