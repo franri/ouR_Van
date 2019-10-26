@@ -19,6 +19,10 @@ nav ul a:hover {
     padding-top: 8rem;
 }
 
+.pushpin.pinned {
+    max-width: calc(100%/6 + 3%);
+}
+
 /* End - Scrollspy más grande */
 
 /* Start - Tabs Feed | Full Story alineadas a la derecha */
@@ -94,7 +98,7 @@ nav ul a:hover {
 
 @media (min-width: 993px) {
     .parallax-container {
-        height: 100vh;
+        height: 90vh;
 
     }
 }
@@ -108,33 +112,35 @@ nav ul a:hover {
 /* End - Parallax Chapita */
 
 /* Para que las listas estén espaciadas */
-ul li:not(:first-child) {
+ul:not(#nav-mobile) li:not(:first-child) {
     margin-top: 5px;
 }
 
-/* Specs de Chapita */
-.specs {
+/* Footer */
+.footer-row{
     display: flex;
-    align-content: center;
-    justify-content: space-between;
 }
-
 @media (min-width: 602px) {
-    .specs {
-        flex-wrap: nowrap;
+    .footer-row {
+        flex-direction: row;
     }
 }
 
 @media (max-width: 601px) {
-    .specs {
-        flex-wrap: wrap;
+    .footer-row {
+        flex-direction: column;
     }
 }
-
-.specs.impar {
-    flex-direction: row;
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex: 1 1 0;
 }
-
-.specs.par {
-    flex-direction: row-reverse;
+.footer-column>*{
+    margin: 1rem;
+}
+.footer-column>a, .footer-column>.twitter-follow-button{
+    align-self: center;
 }
