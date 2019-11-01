@@ -69,7 +69,7 @@ nav ul a:hover {
     flex-wrap: wrap;
 }
 
-.card-container .card {
+.card-container a {
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -77,7 +77,7 @@ nav ul a:hover {
 /* En pantallas grandes, 3 por fila */
 @media (min-width: 993px) {
 
-    .card-container .card {
+    .card-container a {
         flex-basis: 30%;
         margin: 1%;
     }
@@ -85,7 +85,7 @@ nav ul a:hover {
 
 /* En pantallas medianas, 2 por fila */
 @media (min-width: 602px) and (max-width: 992px) {
-    .card-container .card {
+    .card-container a {
         flex-basis: 47%;
         margin: 1%;
     }
@@ -97,7 +97,7 @@ nav ul a:hover {
         justify-content: center;
     }
 
-    .card-container .card {
+    .card-container a {
         flex-basis: 75%;
     }
 }
