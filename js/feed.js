@@ -10,3 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
     
 
 });
+
+window.onresize = function(){location.reload();};

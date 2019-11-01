@@ -18,6 +18,7 @@ nav ul a:hover {
 /* .tabs-content.carousel .carousel-item { height: 50%; } */
 
 
+
 .table-of-contents {
     padding-top: 8rem;
 }
@@ -40,6 +41,16 @@ nav ul a:hover {
         flex-grow: 0;
     }
 }
+.tabs-content.carousel.carousel-slider{
+    height: auto;
+    min-height: auto;
+}
+.carousel.carousel-slider .carousel-item {
+    height: auto;
+    min-height: auto;
+    position: relative;    
+}
+
 
 /* End - Tabs Feed | Full Story alineadas a la derecha */
 
