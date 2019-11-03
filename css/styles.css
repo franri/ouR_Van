@@ -1,3 +1,8 @@
+a:hover:not(.tooltipped), a:visited, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Start - Navbar chico y grande parecidos */
 nav ul a:hover {
     background-color: rgba(0, 0, 0, 0);
@@ -98,7 +103,7 @@ nav ul a:hover {
     }
 
     .card-container a {
-        flex-basis: 75%;
+        flex-basis: 85%;
     }
 }
 

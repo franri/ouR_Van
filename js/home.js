@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var instancePushpin = M.Pushpin.init(element, {
             top: elemTop,
-            bottom: elemTop + parentRect.height - elemRect.height
+            bottom: elemTop + parentRect.height
         });
     })
 });
