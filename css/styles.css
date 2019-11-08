@@ -131,7 +131,7 @@ nav ul a:hover {
 /* End - Parallax Chapita */
 
 /* Para que las listas estén espaciadas */
-ul:not(#nav-mobile) li:not(:first-child) {
+ul:not(#nav-mobile):not(.cinchar-derecha) li:not(:first-child) {
     margin-top: 5px;
 }
 
