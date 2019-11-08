@@ -55,8 +55,21 @@ nav ul a:hover {
     min-height: auto;
     position: relative;    
 }
+#full-story{
+    position: absolute;
+}
 
+#full-story > div{
+    height: auto;
+    min-height: auto;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;   
+}
 
+#full-story > div > div.section.col > div.col{
+    padding: 0;
+}
 /* End - Tabs Feed | Full Story alineadas a la derecha */
 
 /* Start - Layout y Styling de Home Cards */
