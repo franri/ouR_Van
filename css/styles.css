@@ -59,6 +59,11 @@ nav ul a:hover {
 
 /* End - Tabs Feed | Full Story alineadas a la derecha */
 
+/* Botones de me gusta */
+.card-action > a + span {
+    margin: 0 1rem 0 0.5rem;
+}
+
 /* Start - Layout y Styling de Home Cards */
 .card .card-image .card-title {
     background-color: rgba(255, 255, 255, 0.2);
