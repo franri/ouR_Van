@@ -35,6 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    // para que full story tenga altura adecuada
+
+    // cuando cliqueo en Full Story, le pongo la altura a tabs de fullstory sections
+    document.querySelector('a[href^="#full-story"]').addEventListener('click', function(){
+        secciones = document.querySelector("#full-story>div");
+        newHeight = secciones.clientHeight;
+        document.querySelector('div.tabs-content.carousel.carousel-slider').style.height = newHeight + 'px';
+    });
+    // cuando cliqueo en Feed, le pongo la altura a tabs de feed
+    document.querySelector('a[href^="#feed"]').addEventListener('click', function(){
+        secciones = document.querySelector("#feed>div.section");        
+        newHeight = secciones.clientHeight;
+        document.querySelector('div.tabs-content.carousel.carousel-slider').style.height = newHeight + 'px';
+    });
+
+
 
 });
 
