@@ -61,58 +61,60 @@
                 </p>
                 <form class="col m6 push-m1 s12" action="#">
                     <div class="row">
-                        <div class="input-field col m6 s12">
+                        <div class="input-field inline col m6 s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input placeholder="Thomas" id="first_name" type="text" class="validate">
+                            <input id="first_name" type="text" class="validate">
                             <label for="first_name">Nombre</label>
                         </div>
-                        <div class="input-field col m6 s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input placeholder="Diengine" id="last_name" type="text" class="validate">
+                        <div class="input-field inline col m6 s12">
+                            <input id="last_name" type="text" class="validate">
                             <label for="last_name">Apellido</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col m12 s12">
+                        <div class="input-field inline col m12 s12">
                             <i class="material-icons prefix">email</i>
-                            <input placeholder="email@address.com" id="email" type="text" class="validate">
+                            <input  id="email" type="text" class="validate">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col m12 s12">
+                        <div class="input-field inline col m12 s12">
                             <i class="material-icons prefix">short_text</i>
-                            <textarea placeholder="Área para escribir" id="textarea1"
+                            <textarea id="textarea1"
                                 class="materialize-textarea"></textarea>
-                            <label for="textarea1">¡Contanos por la que nos queres contactar!</label>
+                            <label for="textarea1">¿Por que nos queres contactar?</label>
                         </div>
                     </div>
 
-                    <div class="radioRequired" name="mode" data-error="Error msg here">
-                        <label for="textarea1">¡Seleccione la razon por la que nos quiere contactar!</label>
-                        <p>
-                            <label>
-                                <input class="with-gap" name="choice" type="radio" />
-                                <span>Empleo</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class="with-gap" name="choice" type="radio" />
-                                <span>Alquiler</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input class="with-gap" name="choice" type="radio" />
-                                <span>Negocios</span>
-                            </label>
-                        </p>
-                    </div>
+                    <div style="padding-left: 1rem;">
+                        <div class="radioRequired" name="mode" data-error="Error msg here">
+                            <label for="textarea1">¡Seleccione la razon por la que nos quiere contactar!</label>
+                            <p>
+                                <label>
+                                    <input class="with-gap" id="employment" name="choice" type="radio" />
+                                    <span>Empleo</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" id="rental" name="choice" type="radio" />
+                                    <span>Alquiler</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" id="business" name="choice" type="radio" />
+                                    <span>Negocios</span>
+                                </label>
+                            </p>
+                        </div>
+                    
                     <br>
-                    <button class="btn waves-effect waves-light orange darken-1" type="submit" name="action">Enviar
+                    <button id="send-button" class="btn waves-effect waves-light " >Enviar
                         <i class="material-icons right">send</i>
                     </button>
+                </div>
                 </form>
             </div>
         </div>
@@ -158,6 +160,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
