@@ -72,9 +72,21 @@ nav ul a:hover {
 }
 /* End - Tabs Feed | Full Story alineadas a la derecha */
 
+/* Nombre y fecha de los comments */
+.header-comments {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Botones de me gusta */
 .card-action > a + span {
     margin: 0 1rem 0 0.5rem;
+}
+.contenedor-botones-reaccion {
+    display: flex; flex-wrap: wrap;
+}
+.contenedor-botones-reaccion > span {
+    display: inline-block; margin: 5px;
 }
 
 /* Start - Layout y Styling de Home Cards */
