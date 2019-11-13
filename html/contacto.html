@@ -44,30 +44,44 @@
     </header>
     <main>
         <div class="row">
+            <br>
+            <br>
+            <br class="hide-on-large-only">
+            <br class="hide-on-large-only">
             <div class="container">
-                <form class="col m6 push-m6 s12" action="#">
-                    <br>
-                    <br>
-                    <br class="hide-on-large-only">
-                    <br class="hide-on-large-only">
+                <div class="container">
+                    <h3 class="center-align">¿Queres contactarte con nosotros?</h3>
+                </div>
+                <br>
+                <br>
+                <p class="col m5 s12 flow-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore
+                    voluptatibus similique libero voluptas eaque corrupti harum consectetur laboriosam reprehenderit
+                    maxime, suscipit tempora voluptatum a dolores veniam labore, blanditiis exercitationem?
+                </p>
+                <form class="col m6 push-m1 s12" action="#">
                     <div class="row">
                         <div class="input-field col m6 s12">
+                            <i class="material-icons prefix">account_circle</i>
                             <input placeholder="Thomas" id="first_name" type="text" class="validate">
                             <label for="first_name">Nombre</label>
                         </div>
                         <div class="input-field col m6 s12">
+                            <i class="material-icons prefix">account_circle</i>
                             <input placeholder="Diengine" id="last_name" type="text" class="validate">
                             <label for="last_name">Apellido</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col m12 s12">
+                            <i class="material-icons prefix">email</i>
                             <input placeholder="email@address.com" id="email" type="text" class="validate">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col m12 s12">
+                            <i class="material-icons prefix">short_text</i>
                             <textarea placeholder="Área para escribir" id="textarea1"
                                 class="materialize-textarea"></textarea>
                             <label for="textarea1">¡Contanos por la que nos queres contactar!</label>
@@ -75,26 +89,30 @@
                     </div>
 
                     <div class="radioRequired" name="mode" data-error="Error msg here">
-                            <label for="textarea1">¡Seleccione la razon por la que nos quiere contactar!</label>
+                        <label for="textarea1">¡Seleccione la razon por la que nos quiere contactar!</label>
                         <p>
                             <label>
-                                <input class="with-gap" name="choice" type="radio"  />
+                                <input class="with-gap" name="choice" type="radio" />
                                 <span>Empleo</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input class="with-gap" name="choice" type="radio"  />
+                                <input class="with-gap" name="choice" type="radio" />
                                 <span>Alquiler</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input class="with-gap" name="choice" type="radio"  />
+                                <input class="with-gap" name="choice" type="radio" />
                                 <span>Negocios</span>
                             </label>
                         </p>
                     </div>
+                    <br>
+                    <button class="btn waves-effect waves-light orange darken-1" type="submit" name="action">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
                 </form>
             </div>
         </div>
