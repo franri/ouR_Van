@@ -32,6 +32,10 @@ nav ul a:hover {
     max-width: calc(100%/6);
 }
 
+.materialbox-caption {
+    transform: translateY(-1rem);
+}
+
 /* End - Scrollspy más grande */
 
 /* Start - Tabs Feed | Full Story alineadas a la derecha */

@@ -4,6 +4,7 @@ let data = [{
         date: "14/2/2020",
         time: "11:58",
         text: "Acá estamos visitando el zoologico. Que lástima que los leones se escaparon y se comieron a los pingüinos antes de que llegaramos. ¡Nos perdimos el mejor evento de la semana!",
+        description: "¡Una foto del zoológico!",
         comentarios: [{
                 image: "https://picsum.photos/id/7/500/",
                 user: "Jacobo",
@@ -28,6 +29,7 @@ let data = [{
         date: "14/2/2020",
         time: "11:58",
         text: "Visitando el lago mas transparente del mundo! Literalmente podrias entrar al lago sin darte cuenta de que esta ahí!",
+        description: "Nadate una",
         comentarios: [{
                 image: "https://picsum.photos/id/7/500/",
                 user: "Tío Jaime",
@@ -52,6 +54,7 @@ let data = [{
         date: "14/2/2020",
         time: "11:58",
         text: "Usando la parrilla movil para hacer un asado bien uruguayo en el parque!!!",
+        description: "Parrilleando con delantal",
         comentarios: [{
                 image: "https://picsum.photos/id/7/500/",
                 user: "Tío Jaime",
@@ -81,10 +84,10 @@ let data = [{
 
 const CANTIDAD_DE_COMENTARIOS = data.length;
 
-function tweet(number, image, user, date, time, text) {
+function tweet(number, image, user, date, time, text, descr) {
     return `<div class="col s12 card horizontal orange lighten-5">
                     <div class="card-image">
-                        <img class="materialboxed" data-caption="Una foto del zoologico!"
+                        <img class="materialboxed" data-caption="${descr}"
                             src="${image}">
                     </div>
                     <div class="card-stacked">
@@ -259,7 +262,7 @@ function cargarTweets() {
 
     data.forEach((current, index) => {
         let comentarioPrincipal = current;
-        let principalHtml = tweet(index, comentarioPrincipal.image, comentarioPrincipal.user, comentarioPrincipal.date, comentarioPrincipal.time, comentarioPrincipal.text);
+        let principalHtml = tweet(index, comentarioPrincipal.image, comentarioPrincipal.user, comentarioPrincipal.date, comentarioPrincipal.time, comentarioPrincipal.text, comentarioPrincipal.description);
         let comentariosData = current.comentarios;
         let comentariosArray = [];
         let grandesHtml = "";
@@ -442,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(document.querySelector('a[href^="#feed"]').classList.contains("active")){
             document.querySelector("#feed>div.section").click();
         } else {
-            document.querySelector("#full-story>div");
+            document.querySelector("#full-story>div").click();
         }
     };
 
